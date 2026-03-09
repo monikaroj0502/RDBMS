@@ -1,0 +1,13 @@
+DECLARE
+   num1 number;
+   num2 number;
+   ans number;
+BEGIN
+  num1:=5;
+  num2:=6;
+  ans:=num1*num2;
+
+DBMS_OUTPUT.PUT_LINE('multiplication='||ans);
+  
+END;
+/

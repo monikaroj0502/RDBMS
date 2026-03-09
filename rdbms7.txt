@@ -1,0 +1,14 @@
+DECLARE
+  v float;
+  r float;
+  h float;
+
+BEGIN
+  r:=9.13;
+  h:=12.5;
+  v:=3.14*r*r*h;
+
+DBMS_OUTPUT.PUT_LINE('volume of cylinder='||v);
+
+END;
+/
