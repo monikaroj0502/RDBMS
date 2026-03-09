@@ -1,0 +1,14 @@
+DECLARE 
+       l float;
+       w float;
+       a float;
+
+BEGIN
+    l:=7.9;
+    w:=9.7;
+    a:=w*l;
+
+DBMS_OUTPUT.PUT_LINE('Area of rectangle='||a);
+
+END;
+/                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
