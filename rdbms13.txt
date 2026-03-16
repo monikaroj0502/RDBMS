@@ -1,0 +1,24 @@
+DECLARE
+     maths int;
+     hindi int;
+     English int;
+     Ac int;
+     eco int;
+     total int;
+     per float;
+
+BEGIN
+     maths:=&maths;
+     hindi:=&hindi;
+     English:=&English ;
+     Ac:=&Ac;
+     eco:=&eco;
+ 
+     total:=maths+English+hindi+Ac+eco;
+     per:=total/5;
+
+DBMS_OUTPUT.PUT_LINE('total marks='||total);
+DBMS_OUTPUT.PUT_LINE('average marks='||per);
+
+END;
+/

@@ -1,0 +1,18 @@
+DECLARE
+     r float;
+     h float;
+     c float;
+     sa float;
+
+BEGIN
+   r:= &r;
+   h:=&h;
+
+c:=2*3.14*r;
+sa:=2*3.14*r*(r+h);
+
+DBMS_OUTPUT.PUT_LINE('Cicumference='||c);
+DBMS_OUTPUT.PUT_LINE('Surface area='||sa);
+
+END;
+/
