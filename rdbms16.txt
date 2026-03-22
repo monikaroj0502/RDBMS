@@ -1,0 +1,28 @@
+DECLARE 
+    num1 number;
+    num2 number;
+    num3 number:
+
+BEGIN
+
+    num1:=&num1;
+    num2:=&num2;
+    num3:=&num3;
+
+IF num1>num2 and num1>num3 THEN 
+    
+DBMS_OUTPUT.PUT_LINE(num1 ||'is maximum');
+
+ ELSE IF num2>num1 and num2>num3
+
+DBMS_OUTPUT.PUT_LINE(num2 ||'is maximum');
+
+ELSE
+
+DBMS_OUTPUT.PUT_LINE(num3 ||'is maximum');
+
+END IF;
+END IF;
+
+END;
+/

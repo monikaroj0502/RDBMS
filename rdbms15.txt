@@ -1,0 +1,19 @@
+DECLARE 
+    num1 number;
+    
+ 
+BEGIN
+    num1:=&num1;
+    
+ 
+IF num1 mod 2=0 THEN 
+    
+DBMS_OUTPUT.PUT_LINE('even');
+
+ELSE
+
+DBMS_OUTPUT.PUT_LINE('odd');
+
+END IF;
+END;
+/

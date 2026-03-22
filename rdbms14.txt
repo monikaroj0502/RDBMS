@@ -1,0 +1,19 @@
+DECLARE 
+    num1 number;
+    num2 number;
+ 
+BEGIN
+    num1:=&num1;
+    num2:=&num2;
+ 
+IF num1>num2 THEN 
+    
+DBMS_OUTPUT.PUT_LINE(num1||'is maximum');
+
+ELSE
+
+DBMS_OUTPUT.PUT_LINE(num2||'is maximum');
+
+END IF;
+END;
+/

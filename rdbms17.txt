@@ -1,0 +1,21 @@
+DECLARE
+  num int;
+  i int;
+  fact int;
+
+BEGIN
+   num:=&num;
+   i:=1;
+   fact:=1;
+
+LOOP
+    fact:=fact*i;
+
+i:=i+1;
+
+EXIT WHEN i>num;
+
+END LOOP;
+     DBMS_OUTPUT.PUT_LINE('factorial='||fact);
+END;
+/
