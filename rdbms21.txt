@@ -1,0 +1,35 @@
+create table student( rno int,
+sname char(10),
+per float,
+class char(20));
+
+declare
+
+rno int;
+sname int;
+per float;
+class char(20);
+
+begin
+
+rno:=&rno;
+sname:='&sname';
+per:=&per;
+
+if per>=70 then
+   class:='distinction';
+else if per>=60 then
+   class:='first class';
+else if per>=50 then
+   class:='second class';
+else if per>=35 then
+    class:='pass';
+else 
+     class:='fail';
+end if;
+end if;
+end if;
+end if;
+insert into student values(sno,sname,per,class);
+end;
+/

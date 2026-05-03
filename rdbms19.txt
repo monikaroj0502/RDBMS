@@ -1,0 +1,21 @@
+DECLARE
+     num int;
+     s int;
+     d int;
+
+BEGIN
+     num:=&num;
+     s:=0;
+while num>0
+    loop
+d:=num mod 10;
+s:=s+d;
+
+num:=FLOOR(num/10);
+
+END LOOP;
+
+ DBMS_OUTPUT.PUT_LINE('Sum of digit='||s);
+
+END;
+/

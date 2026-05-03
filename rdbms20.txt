@@ -1,0 +1,19 @@
+create table student(sno int primary key,
+ sname varchar(20),
+ per float);
+
+
+DECLARE
+   sno int;
+   sname varchar(20);
+   per float;
+
+BEGIN
+sno:=&sno;
+sname:='&sname';
+per:=&per;
+   
+        insert into student values(sno , sname , per);
+
+END;
+/
